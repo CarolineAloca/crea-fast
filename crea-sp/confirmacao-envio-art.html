@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREAFast</title>
+
+  <link rel="stylesheet" href="css/confirmacao-envio-art.css">
+</head>
+
+<body class="body">
+
+  <!---Menu lateral-->
+  <!---Bot-->
+  <section class="bot-luna">
+    <img src="./bot/avatar.png" id="avatar-bot">
+
+
+    <!---Bot-->
+    <div class="chat-container">
+      <div id="chat-display"></div>
+      <a id="diminuir-chat" hr>
+        -
+
+        <h3 class="boas-vindas">
+          Bem Vindo ao<br>Crea Assist.
+        </h3>
+        <img src="./bot/avatar.png" id="luna-bot">
+        <button id="startChat" alt="Falar com Luna">Start Chat
+        </button>
+    </div>
+    </div>
+    <header>
+      <section class="menu-lateral">
+        <img class="logo-branco" src="./images/logo-branco.png" alt="logotipo do CREA de São Paulo">
+
+        <section class="categorias">
+
+          <div class="home-menu">
+            <img class="icone" src="./icons/home.svg">
+            <a href="">Home</a>
+          </div>
+
+          <div class="anuidade">
+            <img class="icone" src="./icons/anuidade.svg">
+            <a href="">Anuidade</a>
+          </div>
+
+          <div class="atendimento">
+            <img class="icone" src="./icons/atendimento.svg">
+            <a href="">Atendimento</a>
+          </div>
+
+          <div class="servicos-art">
+            <img class="icone" src="./icons/servicosART.svg">
+            <a href="">Serviços ART</a>
+          </div>
+
+          <div class="solicitacoes">
+            <img class="icone" src="./icons/solicitacoes.svg">
+            <a href="">Solicitações</a>
+          </div>
+
+          <div class="agendamento">
+            <img class="icone" src="./icons/agendamento.svg">
+            <a href="">Agendamento de Atendimento</a>
+          </div>
+
+          <div class="cursos-eventos">
+            <img class="icone" src="./icons/cursosEventos.svg">
+            <a href="">Cursos e Eventos</a>
+          </div>
+
+          <div class="clube-vantagens">
+            <img class="icone" src="./icons/clube.svg">
+            <a href="">Clube de Vantagens</a>
+          </div>
+
+          <hr class="hr">
+          </hr>
+
+          <div class="acoes">
+            <img class="icone" src="./icons/acoes.svg">
+            <a href="">Ações do Crea-SP</a>
+          </div>
+
+          <div class="noticias">
+            <img class="icone" src="./icons/noticias.svg">
+            <a href="">Noticias</a>
+          </div>
+
+          <div class="configuracoes">
+            <img class="icone" src="./icons/configuracoes.svg">
+            <a href="">Configurações</a>
+          </div>
+
+          <div class="acessibilidade">
+            <img class="icone" src="./icons/acessibilidade.svg">
+            <a href="">Acessibilidade</a>
+          </div>
+
+          <div class="logout">
+            <img class="icone" src="./icons/logout.svg">
+            <a href="">Log out</a>
+          </div>
+
+        </section>
+      </section>
+    </header>
+
+    <!---Topo-->
+
+
+    <section class="topo">
+      <h1 class="h1">
+        Bem Vindo,
+      </h1>
+
+      <div id="busca">
+        <input type="text" id="txtBusca" placeholder="Buscar em Serviços ART" />
+        <img src="./icons/busca.svg" id="btnBusca" alt="Buscar" />
+        <img src="./icons/servicos-art/filtros/filtro-azul.svg" id="filtro-azul" alt="Buscar" />
+      </div>
+
+      <div id="linha-vertical"></div>
+
+      <img src="./icons/eleicoes.svg" id="eleicoes" alt="Eleições">
+      <img src="./icons/falar.svg" id="falar" alt="fale com o Crea">
+      <img src="./icons/notificacao.svg" id="notificacao" alt="notificações">
+      <img src="./icons/avatar.svg" id="avatar" alt="avatar do usuário">
+
+      <div id="nome-usuario">
+        João Paulo
+      </div>
+
+      <div id="crea-usuario">
+        CREA 1234567890
+      </div>
+
+    </section>
+
+    <!---Serviços ART-->
+
+    <span class="servicos-art-titulo">
+      Serviços ART
+    </span>
+
+    <img src="./icons/servicos-art/home.svg" id="home-icon">
+    <img src="./icons/servicos-art/arrow.svg" id="arrow-icon">
+    <span class="servicos-art-sub">
+      Serviços ART
+    </span>
+    <span class="consulta-art-sub">
+      Consulta ART
+    </span>
+
+    <button class="btnConsulta-art">
+      Consulta ART
+    </button>
+
+    <button class="btnConsulta-obra">
+      Consultar Obra/Serviço
+    </button>
+    <button class="btnPersonalizar-art">
+      Personalizar ART
+    </button>
+    <button class="btnPreencher-art">
+      Preencher ART
+    </button>
+    <button class="btnEmpresa-contratada">
+      Empresa Contratada
+    </button>
+
+    <!---Filtros ART-->
+    <section class="filtros-busca">
+      <span class="nome-contratante">
+        Nome Contratante
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+      </span>
+      <span class="cpf-cnpj-contratante">
+        CPF / CNPJ do Contratante
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+      </span>
+      <span class="log-contratante">
+        Logradouro do Contrante
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+      </span>
+      <span class="numero">
+        Número
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+      </span>
+      <span class="bairro">
+        Bairro
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+      </span>
+      <span class="cidade">
+        Cidade
+        <img src="./icons/servicos-art/filtros/filtro-ordem.svg" id="filtro-ordem">
+        <img src="./icons/servicos-art/filtros/filtro.svg" id="filtro">
+      </span>
+      <span class="estado">
+        Estado
+      </span>
+      </span>
+      <span class="cep">
+        CEP
+      </span>
+      <span class="vinc-contratual">
+        Vinculo Contratual
+      </span>
+    </section>
+    <section class="filtros-art">
+
+      <input type="text" id="busca-art" placeholder="Pesquisar ART" />
+      <img src="./icons/servicos-art/lupa.svg" id="btnBuscaArt" alt="Buscar" />
+
+
+    </section>
+
+    <button class="exportar">
+      <img src="./icons/exportar.svg">
+      Exportar
+    </button>
+    <!---ARTs-->
+
+    <table class="table-art" border="1">
+      <tr>
+        <td>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td>Yesterday at 10:20am</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-1">Ativa</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td>Today at 4:11pm</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-2">Ativa</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td>May 12 at 4:11pm</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-3">Cancelada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td>Dec 1, 2018 at 1:30pm</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-4">Ativa</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-5">Em Preenchimento</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/alterar.svg" id="print">
+          <img src="/icons/servicos-art/filtros/excluir.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-6">Em Preenchimento</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/alterar.svg" id="print">
+          <img src="/icons/servicos-art/filtros/excluir.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Cargo/Função</td>
+        <td class="localizador">LC34078986</td>
+        <td>Dec 1, 2018 at 1:30pm</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-7">Anulada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Cargo/Função</td>
+        <td class="localizador">LC34078986</td>
+        <td>Dec 1, 2018 at 1:30pm</td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-8">Enviada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Cargo/Função</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-9">Em Preenchimento</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/alterar.svg" id="print">
+          <img src="/icons/servicos-art/filtros/excluir.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-10">Baixada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Cargo/Função</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-11">Baixada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">28027230231167334</label>
+          </div>
+        </td>
+        <td class="obra">Obra/Serviço</td>
+        <td class="localizador">LC34078986</td>
+        <td></td>
+        <td>Carlos da Silva</td>
+        <td>Rua Benetido de Araujo Novaes - Itapevi</td>
+        <td class="status-12">Anulada</td>
+        <td class="acao-print-ver">
+          <img src="/icons/servicos-art/filtros/print.svg" id="print">
+          <img src="/icons/servicos-art/filtros/eye.svg" id="eye">
+        </td>
+      </tr>
+    </table>
+
+    <section class="pagina">
+      <div id="pag-anterior">
+        1
+      </div>
+      <div id="de">
+        de
+      </div>
+      <div id="pag-seguinte">
+        30
+      </div>
+      <div id="seguinte">
+        Seguinte>
+      </div>
+    </section>
+
+    <footer class="footer">
+      2023 CREAFast - 1.0.4015.0 - ONIRO-13-DCAv. Brigadeiro Faria Lima, 1059 - Pinheiros - São Paulo - SP CEP 01452-920 | Atendimento: 0800 017 1811
+    </footer>
+
+    <img src="./images/logo.svg" id="logo">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+
+</body>
+
+</html>

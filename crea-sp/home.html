@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREAFast</title>
+
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<!---Menu lateral-->
+
+<header>
+  <section class="menu-lateral">
+    <img class="logo-branco" src="./images/logo-branco.png" alt="logotipo do CREA de São Paulo">
+
+    <!---Bot-->
+    <section class="bot-luna">
+      <img src="./bot/avatar.png" id="avatar-bot">
+
+
+      <!---Bot-->
+      <div class="chat-container">
+        <div id="chat-display"></div>
+        <a id="diminuir-chat" hr>
+          -
+
+          <h3 class="boas-vindas">
+            Bem Vindo ao<br>Crea Assist.
+          </h3>
+          <img src="./bot/avatar.png" id="luna-bot">
+          <button id="startChat" alt="Falar com Luna">Start Chat
+          </button>
+      </div>
+      </div>
+      <!---
+      <body>
+        <div class="chat-container">
+          <div id="chat-display"></div>
+          <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+            <button onclick="sendMessage()">Enviar</button>
+          </div>
+        </div>-->
+
+      <script src="script.js"></script>
+      <div class="home-menu">
+        <img class="icone" src="./icons/home.svg">
+        <a href="">Home</a>
+      </div>
+
+      <div class="anuidade">
+        <img class="icone" src="./icons/anuidade.svg">
+        <a href="">Anuidade</a>
+      </div>
+
+      <div class="atendimento">
+        <img class="icone" src="./icons/atendimento.svg">
+        <a href="">Atendimento</a>
+      </div>
+
+      <div class="servicos-art">
+        <img class="icone" src="./icons/servicosART.svg">
+        <a href="">Serviços ART</a>
+      </div>
+
+      <div class="solicitacoes">
+        <img class="icone" src="./icons/solicitacoes.svg">
+        <a href="">Solicitações</a>
+      </div>
+
+      <div class="agendamento">
+        <img class="icone" src="./icons/agendamento.svg">
+        <a href="">Agendamento de Atendimento</a>
+      </div>
+
+      <div class="cursos-eventos">
+        <img class="icone" src="./icons/cursosEventos.svg">
+        <a href="">Cursos e Eventos</a>
+      </div>
+
+      <div class="clube-vantagens">
+        <img class="icone" src="./icons/clube.svg">
+        <a href="">Clube de Vantagens</a>
+      </div>
+
+      <hr class="hr">
+      </hr>
+
+      <div class="acoes">
+        <img class="icone" src="./icons/acoes.svg">
+        <a href="">Ações do Crea-SP</a>
+      </div>
+
+      <div class="noticias">
+        <img class="icone" src="./icons/noticias.svg">
+        <a href="">Noticias</a>
+      </div>
+
+      <div class="configuracoes">
+        <img class="icone" src="./icons/configuracoes.svg">
+        <a href="">Configurações</a>
+      </div>
+
+      <div class="acessibilidade">
+        <img class="icone" src="./icons/acessibilidade.svg">
+        <a href="">Acessibilidade</a>
+      </div>
+
+      <div class="logout">
+        <img class="icone" src="./icons/logout.svg">
+        <a href="">Log out</a>
+      </div>
+
+    </section>
+  </section>
+</header>
+
+<!---Topo-->
+
+
+<section class="topo">
+  <h1 class="h1">
+    Bem Vindo,
+  </h1>
+
+  <div id="busca">
+    <input type="text" id="txtBusca" placeholder="Buscar em todo o site" />
+    <img src="./icons/busca.svg" id="btnBusca" alt="Buscar" />
+  </div>
+
+  <div id="linha-vertical"></div>
+
+  <img src="./icons/eleicoes.svg" id="eleicoes" alt="Eleições">
+  <img src="./icons/falar.svg" id="falar" alt="fale com o Crea">
+  <img src="./icons/notificacao.svg" id="notificacao" alt="notificações">
+  <img src="./icons/avatar.svg" id="avatar" alt="avatar do usuário">
+
+  <div id="nome-usuario">
+    João Paulo
+  </div>
+
+  <div id="crea-usuario">
+    CREA 1234567890
+  </div>
+
+</section>
+
+<!---CATs-->
+
+<section class="cats">
+  <img src="./images/banner.png" id="banner" alt="banner" />
+
+  <div id="minhas-cats">
+    <span class="titulo-quadros-minhas">Minhas CAT's'</span>
+    <span class="status-emitidos">Emitidos</span>
+    <span class="contador-emitidos">24</span>
+  </div>
+
+  <div id="cat">
+    <span class="titulo-quadros-cat">CAT</span>
+    <span class="status-aguardando">Aguardando aprovação</span>
+    <span class="contador-aguardando">05</span>
+  </div>
+
+</section>
+
+<!---ARTs-->
+
+<section class="minhas-arts">
+  <span class="arts">
+    Minhas ART's'
+  </span>
+  <span class="arts-subtitulo"></span>
+  <img src="./images/grafico.svg" id="grafico" alt="grafico" />
+  <span class="legenda-art">
+    Legenda
+  </span>
+
+  <table id="table-art" border="1">
+    <tr>
+      <td>Baixadas</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Ativas</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Enviadas</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Em Preenchimento</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Canceladas</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Anuladas</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <div id="marcacao-baixadas"></div>
+  <div id="marcacao-ativas"></div>
+  <div id="marcacao-enviadas"></div>
+  <div id="marcacao-preenchimento"></div>
+  <div id="marcacao-canceladas"></div>
+  <div id="marcacao-anuladas"></div>
+
+  <button class="btnAtualizar">
+    Atualizar
+  </button>
+</section>
+</section>
+
+<section class="destaques">
+  <h2 class="h2">
+    Últimos Destaques
+  </h2>
+  <div class="linhaDestaques">
+    <hr class="hrDestaques">
+    </hr>
+    <hr class="hrDestaquesLinha">
+    </hr>
+  </div>
+
+  <img src="./images/destaques/hackathon.svg" id="hackathon">
+
+
+  <img src="./images/destaques/coworking.svg" id="coworking">
+</section>
+
+<!---Eventos-->
+
+<section class="eventos">
+  <span class="proximosEventos">
+    Próximos eventos
+  </span>
+  <span class="ver-todas">
+    ver todas
+  </span>
+
+  <div id="primeiroEventoContainer">
+    <img src="./images/eventos/primeiroEvento.svg" id="primeiroEventoImagem">
+    <span class="primeiroEventoNome">
+      2º Simposio Nacional de Cidades Inteligentes
+    </span>
+    <span class="primeiroEventoData">
+      04 April, 2021 | 04:00 PM
+    </span>
+  </div>
+
+  <div id="segundoEventoContainer">
+    <img src="./images/eventos/segundoEvento.svg" id="segundoEventoImagem">
+    <span class="segundoEventoNome">
+      1º Encontro Sudeste de Engenharia Ambiental
+    </span>
+    <span class="segundoEventoData">
+      04 April, 2021 | 04:00 PM
+    </span>
+  </div>
+
+  <div id="terceiroEventoContainer">
+    <img src="./images/eventos/terceiroEvento.svg" id="terceiroEventoImagem">
+    <span class="terceiroEventoNome">
+      Hackathon para area tecnológica
+    </span>
+    <span class="terceiroEventoData">
+      03 April, 2021 | 02:00 PM
+    </span>
+  </div>
+
+  <div id="quartoEventoContainer">
+    <img src="./images/eventos/quartoEvento.svg" id="quartoEventoImagem">
+    <span class="quartoEventoNome">
+      1º ENEC encerra em São Paulo
+    </span>
+    <span class="quartoEventoData">
+      02 April, 2021 | 02:00 PM
+    </span>
+  </div>
+
+  <div id="quintoEventoContainer">
+    <img src="./images/eventos/quintoEvento.svg" id="quintoEventoImagem">
+    <span class="quintoEventoNome">
+      Minicurso – Agilidade na Gestão de Projeto
+    </span>
+    <span class="quintoEventoData">
+      01 April, 2021 | 03:00 PM
+    </span>
+  </div>
+
+</section>
+</section>
+
+<footer class="footer">
+  2023 CREAFast - 1.0.4015.0 - ONIRO-13-DCAv. Brigadeiro Faria Lima, 1059 - Pinheiros - São Paulo - SP CEP 01452-920 | Atendimento: 0800 017 1811
+</footer>
+
+<img src="./images/logo.svg" id="logo">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+
+</body>
+
+</html>
